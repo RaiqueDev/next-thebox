@@ -22,11 +22,10 @@ import {
 } from '@chakra-ui/react';
 
 import { createBreakpoints } from '@chakra-ui/theme-tools';
-import { useState } from 'react';
 
 import { HiMenuAlt1 } from "react-icons/hi";
 
-import Logo from '../img/Logo-TheBox.svg';
+import Logo from './../img/Logo-TheBox.svg';
 
 export default function Nav() {
   
@@ -101,11 +100,112 @@ export default function Nav() {
                   <Drawer onClose={onClose} isOpen={isOpen}>
                     <DrawerOverlay />
                     <DrawerContent>
-                      <DrawerHeader borderBottomWidth='1px'>Basic Drawer</DrawerHeader>
+                      <DrawerHeader 
+                        borderBottomWidth='1px'
+                        borderColor={"#14171F"}>
+
+                        <Text
+                          fontFamily="Work Sans"
+                          fontStyle="italic"
+                          fontWeight="900"
+                          fontSize="30px"
+                          line-height="35px"
+                          color="#2947A9">
+                          TheBox
+                        </Text>
+                      </DrawerHeader>
                       <DrawerBody>
-                        <p>Some contents...</p>
-                        <p>Some contents...</p>
-                        <p>Some contents...</p>
+                        <SimpleGrid 
+                          w="100%" 
+                          h="50%" 
+                          columns={1}
+                          alignItems={"center"}>
+
+                          <Center 
+                            w="30%"
+                            height='30px'
+                            borderWidth='1px'
+                            borderColor={"#14171F"}>
+
+                            <Text
+                              fontStyle="normal"
+                              fontWeight="normal"
+                              fontSize="18px"
+                              lineHeight="21px"
+                              color="#14171F"
+                              cursor="pointer">
+                              Home
+                            </Text>
+                          </Center>
+
+                          <Center 
+                            w="41%"
+                            height='30px'
+                            borderWidth='1px'
+                            borderColor={"#14171F"}>
+                            
+                            <Text
+                              fontStyle="normal"
+                              fontWeight="normal"
+                              fontSize="18px"
+                              lineHeight="21px"
+                              color="#14171F"
+                              cursor="pointer">
+                              About Us
+                            </Text>
+                          </Center>
+
+                          <Center 
+                            w="38%"
+                            height='30px'
+                            borderWidth='1px'
+                            borderColor={"#14171F"}>
+                            
+                            <Text
+                              fontStyle="normal"
+                              fontWeight="normal"
+                              fontSize="18px"
+                              lineHeight="21px"
+                              color="#14171F"
+                              cursor="pointer">
+                              Projects
+                            </Text>
+                          </Center>
+
+                          <Center 
+                            w="40%"
+                            height='30px'
+                            borderWidth='1px'
+                            borderColor={"#14171F"}>
+
+                            <Text
+                              fontStyle="normal"
+                              fontWeight="normal"
+                              fontSize="18px"
+                              lineHeight="21px"
+                              color="#14171F"
+                              cursor="pointer">
+                              Services
+                            </Text>
+                          </Center>
+
+                          <Center 
+                            w="50%"
+                            height='35px'
+                            borderWidth='1px'
+                            borderColor={"#F9995D"}>
+
+                            <Text
+                              fontStyle="normal"
+                              fontWeight="normal"
+                              fontSize="18px"
+                              lineHeight="21px"
+                              color="#F9995D"
+                              cursor="pointer">
+                              Contact Us
+                            </Text>
+                          </Center>
+                        </SimpleGrid>
                       </DrawerBody>
                     </DrawerContent>
                   </Drawer>
