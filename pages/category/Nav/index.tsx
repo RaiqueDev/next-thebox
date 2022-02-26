@@ -34,8 +34,10 @@ import { MdOutlineDesignServices } from "react-icons/md";
 import { RiContactsLine, RiMenu4Fill } from "react-icons/ri";
 import { GoInfo } from "react-icons/go";
 import { GrFormClose } from "react-icons/gr";
+import { FaLongArrowAltLeft, FaLongArrowAltRight } from "react-icons/fa"
 
 import Logo from "./../img/Logo-TheBox.svg";
+import Img01 from './../img/Img01.svg';
 
 export default function Nav() {
   const breakpoints = createBreakpoints({
@@ -57,9 +59,7 @@ export default function Nav() {
         <Center 
           w="100%" 
           h="80px"
-          bg="#f1f1f1"
-          border='0.513778px solid rgba(95, 95, 167, 0.37)'
-          boxSizing='border-box'>
+          bg="#fff">
 
           <Center
             w={{
@@ -145,7 +145,7 @@ export default function Nav() {
                 h="100%"
                 display={{
                   base: "flex",
-                  sm: "none",
+                  sm: "flex",
                   md: "none",
                   lg: "none",
                   xl: "none",
@@ -384,7 +384,7 @@ export default function Nav() {
                 }}
                 h={{
                   base: "80px",
-                  sm: "100%",
+                  sm: "80px",
                   md: "100%",
                   lg: "80px",
                   xl: "80px",
@@ -394,21 +394,21 @@ export default function Nav() {
                 justifyContent="space-between"
                 position={{
                   base: "initial",
-                  sm: "fixed",
+                  sm: "initial",
                   md: "fixed",
                   lg: "initial",
                   xl: "initial",
                 }}
                 background={{
                   base: "none",
-                  sm: "#f1f1f1",
+                  sm: "none",
                   md: "#f1f1f1",
                   lg: "none",
                   xl: "none",
                 }}
                 border={{
                   base: "none",
-                  sm: "0.513778px solid rgba(95, 95, 167, 0.37)",
+                  sm: "none",
                   md: "0.513778px solid rgba(95, 95, 167, 0.37)",
                   lg: "none",
                   xl: "none",
@@ -428,7 +428,7 @@ export default function Nav() {
                   gap={2}
                   display={{
                     base: "none",
-                    sm: "grid",
+                    sm: "none",
                     md: "grid",
                     lg: "grid",
                     xl: "grid",
@@ -625,8 +625,234 @@ export default function Nav() {
         </Center>
       </nav>
       <main>
-        <Center w="100%" h="100vh" bg="blue.300">
+        <Center 
+          w={{
+            base: "100%",
+            sm: "100%",
+            md: "89.9%",
+            lg: "100%",
+            xl: "100%",
+          }} 
+          h="100vh" >
           
+          <Box
+            w="100%"
+            h="100%">
+            
+            <Grid 
+              w="100%" 
+              h="100%" 
+              templateColumns={{
+                base: "repeat(1, 1fr)",
+                sm: "repeat(1, 1fr)",
+                md: "repeat(1, 1fr)",
+                lg: "repeat(2, 1fr)",
+                xl: "repeat(2, 1fr)",
+              }} 
+              gap={6}>
+
+              <GridItem 
+                w='100%' 
+                h='100%'>
+
+                <Center
+                  w="100%"
+                  h="100%">
+                  
+                  <Box
+                    w="90%"
+                    maxW='556px'
+                    h="90%"
+                    maxH='168px'
+                    display="flex"
+                    alignItems="flex-start"
+                    flexDir="column"
+                    ml={{
+                      base: "0px",
+                      sm: "0px",
+                      md: "25px",
+                      lg: "25px",
+                      xl: "25px",
+                    }}>
+                    
+                    <Text
+                      fontStyle="normal"
+                      fontWeight="600"
+                      fontSize={{
+                        base: "33px",
+                        sm: "48px",
+                        md: "50px",
+                        lg: "50px",
+                        xl: "72px",
+                      }}
+                      lineHeight={{
+                        base: "64px",
+                        sm: "84px",
+                        md: "84px",
+                        lg: "84px",
+                        xl: "84px",
+                      }}
+                      color="#292E3D">
+                      Building things<br /> 
+                      is our mission.
+                    </Text>
+                  </Box>
+                </Center>
+              </GridItem>
+
+              <GridItem 
+                w='100%' 
+                h='100%' 
+                display="flex"
+                alignItems="flex-end"
+                justifyContent="flex-end">
+
+                <Center
+                  w={{
+                    base: "100%",
+                    sm: "90%",
+                    md: "90%",
+                    lg: "90%",
+                    xl: "90%",
+                  }}
+                  maxW={416}
+                  h="190px"
+                  flexDir="column">
+                  
+                  <Center
+                    w="100%"
+                    h="150px">
+                    
+                    <Center
+                      w="100%"
+                      h="100%"
+                      bg="#3559C7"
+                      textAlign="center"
+                      flexDir="column"
+                      justifyContent="space-evenly">
+                      
+                      <Text
+                        fontStyle="normal"
+                        fontWeight="bold"
+                        fontSize={{
+                          base: "14px",
+                          sm: "14px",
+                          md: "15px",
+                          lg: "17px",
+                          xl: "19px",
+                        }}
+                        lineHeight="23px"
+                        textAlign="center"
+                        color="#FFFFFF">
+                        Feature Projects
+                      </Text>
+
+                      <Text
+                        fontStyle="normal"
+                        fontWeight="normal"
+                        fontSize={{
+                          base: "15px",
+                          sm: "15px",
+                          md: "17px",
+                          lg: "19px",
+                          xl: "20px",
+                        }}
+                        lineHeight="28px"
+                        textAlign="center"
+                        color="#FFFFFF">
+                        The National University of<br/> 
+                        Architecture
+                      </Text>
+                    </Center>
+                  </Center>
+
+                  <Center
+                    w="100%"
+                    h="60px"
+                    bg="#fff"
+                    justifyContent="space-between">
+                    
+                    <Button
+                      w="49.9%"
+                      h="100%"
+                      borderRadius="none"
+                      bg="#292E3D">
+
+                      <Center
+                        w={{
+                          base: "60%",
+                          sm: "55%",
+                          md: "55%",
+                          lg: "45%",
+                          xl: "45%",
+                        }}
+                        h="50%"
+                        justifyContent="space-between">
+
+                        <FaLongArrowAltLeft
+                          color="#FFFFFF" />
+
+                        <Text
+                          fontStyle="normal"
+                          fontWeight="normal"
+                          fontSize={{
+                            base: "14px",
+                            sm: "15px",
+                            md: "16px",
+                            lg: "17px",
+                            xl: "18px",
+                          }}
+                          lineHeight="21px"
+                          textAlign="center"
+                          color="#FFFFFF">
+                          Back
+                        </Text>
+                      </Center>
+                      
+                    </Button>
+
+                    <Button
+                      w="49.8%"
+                      h="100%"
+                      borderRadius="none"
+                      bg="#292E3D">
+                      
+                      <Center
+                        w={{
+                          base: "60%",
+                          sm: "55%",
+                          md: "55%",
+                          lg: "45%",
+                          xl: "45%",
+                        }}
+                        h="50%"
+                        justifyContent="space-between">
+                        
+                        <Text
+                          fontStyle="normal"
+                          fontWeight="normal"
+                          fontSize={{
+                            base: "14px",
+                            sm: "15px",
+                            md: "16px",
+                            lg: "17px",
+                            xl: "18px",
+                          }}
+                          lineHeight="21px"
+                          textAlign="center"
+                          color="#FFFFFF">
+                          Next
+                        </Text>
+
+                        <FaLongArrowAltRight
+                          color="#FFFFFF" />
+                      </Center>
+                    </Button>
+                  </Center>
+                </Center>
+              </GridItem>
+            </Grid>
+          </Box>
         </Center>
       </main>
     </>
