@@ -449,10 +449,10 @@ export default function Nav() {
                 <Center
                   w="100%"
                   h={{
-                    base: "50vh",
-                    sm: "50vh",
-                    md: "50vh",
-                    lg: "50vh",
+                    base: "70vh",
+                    sm: "70vh",
+                    md: "70vh",
+                    lg: "70vh",
                     xl: "70vh"
                   }}>
 
@@ -584,11 +584,11 @@ export default function Nav() {
                 <Center
                   w="100%"
                   h={{
-                    base: "100vh",
+                    base: "110vh",
                     sm: "100vh",
                     md: "90vh",
-                    lg: "60vh",
-                    xl: "60vh"
+                    lg: "80vh",
+                    xl: "80vh"
                   }}>
                   
                   <Center
@@ -613,6 +613,7 @@ export default function Nav() {
                       color="#292E3D">
                       Our Reputation
                     </Text>
+
                     <Center
                       w="100%"
                       h={{
