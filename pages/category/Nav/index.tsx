@@ -24,6 +24,8 @@ import {
   Grid,
   GridItem,
   Container,
+  Wrap,
+  WrapItem,
 } from "@chakra-ui/react";
 
 import { createBreakpoints } from "@chakra-ui/theme-tools";
@@ -34,7 +36,8 @@ import { MdOutlineDesignServices } from "react-icons/md";
 import { RiContactsLine, RiMenu4Fill } from "react-icons/ri";
 import { GoInfo } from "react-icons/go";
 import { GrFormClose } from "react-icons/gr";
-import { FaLongArrowAltLeft, FaLongArrowAltRight } from "react-icons/fa"
+import { FaLongArrowAltLeft, FaLongArrowAltRight, FaHeadset } from "react-icons/fa";
+import { MdDesignServices } from "react-icons/md"
 
 import Logo from "./../img/Logo-TheBox.svg";
 import Img01 from './../img/Img01.svg';
@@ -853,6 +856,203 @@ export default function Nav() {
               </GridItem>
             </Grid>
           </Box>
+        </Center>
+        <Center 
+          w={{
+            base: "100%",
+            sm: "100%",
+            md: "89.9%",
+            lg: "100%",
+            xl: "100%",
+          }} 
+          h={{
+            base: "933px",
+            sm: "933px",
+            md: "733px",
+            lg: "633px",
+            xl: "433px",
+          }} >
+
+          <Center
+            w="90%"
+            maxW={1020}
+            h="90%"
+            maxH={{
+              base: "85%",
+              sm: "85%",
+              md: "70%",
+              lg: "80%",
+              xl: "289px",
+            }}
+            flexDir="column"
+            justifyContent="space-between">
+
+            <Text
+              fontStyle="normal"
+              fontWeight="bold"
+              fontSize={{
+                base: "26px",
+                sm: "28px",
+                md: "30px",
+                lg: "33px",
+                xl: "36px",
+              }}
+              lineHeight="42px"
+              textAlign="center"
+              color="#292E3D">
+              Our Reputation
+            </Text>
+
+            <Center
+              w="100%"
+              h={{
+                base: "85%",
+                sm: "85%",
+                md: "85%",
+                lg: "85%",
+                xl: "197px",
+              }}>
+
+              <Wrap 
+                w="100%" 
+                h="100%" 
+                spacing='66px' 
+                justify='center'>
+
+                <WrapItem
+                  width="292px"
+                  height="197px"
+                  background="#FFFFFF"
+                  border="1.4px solid #E0E3EB"
+                  boxSizing="border-box"
+                  borderRadius="4px">
+
+                  <Center 
+                    w='100%' 
+                    h='100%'>
+                    
+                    <Center
+                      w="90%"
+                      h="80%"
+                      alignItems="flex-start"
+                      flexDir="column"
+                      justifyContent="space-between">
+
+                      <FaHeadset 
+                        color="#F9995D"
+                        fontSize={40}/>
+
+                      <Text
+                        fontStyle="normal"
+                        fontWeight="bold"
+                        fontSize="20px"
+                        lineHeight="23px"
+                        color="#3D445C">
+                        Best Services
+                      </Text>
+
+                      <Text
+                        fontStyle="normal"
+                        fontWeight="normal"
+                        fontSize="16px"
+                        lineHeight="23px"
+                        color="#858EAD">
+                        Nullam senectus porttitor in eget. Eget rutrum leo interdum.
+                      </Text>
+                    </Center>
+                  </Center>
+                </WrapItem>
+
+                <WrapItem
+                  width="292px"
+                  height="197px"
+                  background="#FFFFFF"
+                  border="1.4px solid #E0E3EB"
+                  boxSizing="border-box"
+                  borderRadius="4px">
+
+                  <Center 
+                    w='100%' 
+                    h='100%'>
+                    
+                    <Center
+                      w="90%"
+                      h="80%"
+                      alignItems="flex-start"
+                      flexDir="column"
+                      justifyContent="space-between">
+
+                      <FaHeadset 
+                        color="#F9995D"
+                        fontSize={40}/>
+
+                      <Text
+                        fontStyle="normal"
+                        fontWeight="bold"
+                        fontSize="20px"
+                        lineHeight="23px"
+                        color="#3D445C">
+                        Best Teams
+                      </Text>
+
+                      <Text
+                        fontStyle="normal"
+                        fontWeight="normal"
+                        fontSize="16px"
+                        lineHeight="23px"
+                        color="#858EAD">
+                        Cursus semper tellus volutpat aliquet lacus. 
+                      </Text>
+                    </Center>
+                  </Center>
+                </WrapItem>
+
+                <WrapItem
+                  width="292px"
+                  height="197px"
+                  background="#FFFFFF"
+                  border="1.4px solid #E0E3EB"
+                  boxSizing="border-box"
+                  borderRadius="4px">
+
+                  <Center 
+                    w='100%' 
+                    h='100%'>
+                    
+                    <Center
+                      w="90%"
+                      h="80%"
+                      alignItems="flex-start"
+                      flexDir="column"
+                      justifyContent="space-between">
+
+                      <MdDesignServices 
+                        color="#F9995D"
+                        fontSize={40}/>
+
+                      <Text
+                        fontStyle="normal"
+                        fontWeight="bold"
+                        fontSize="20px"
+                        lineHeight="23px"
+                        color="#3D445C">
+                        Best Designs
+                      </Text>
+
+                      <Text
+                        fontStyle="normal"
+                        fontWeight="normal"
+                        fontSize="16px"
+                        lineHeight="23px"
+                        color="#858EAD">
+                        Ultricies at ipsum nunc, tristique nam lectus.
+                      </Text>
+                    </Center>
+                  </Center>
+                </WrapItem>
+              </Wrap>
+            </Center>
+          </Center>
         </Center>
       </main>
     </>
